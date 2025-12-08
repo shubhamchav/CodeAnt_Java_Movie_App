@@ -2,9 +2,9 @@ name: Test Coverage
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   coverage:
@@ -26,5 +26,5 @@ jobs:
       - name: Upload coverage to CodeAnt AI
         uses: CodeAnt-AI/codeant-coverage-action@v0.0.1
         with:
-          access_token: ${{ secrets.GH_TOKEN }}
+          access_token: ${{ secrets.GB_TOKEN }}
           coverage_file: target/site/jacoco/jacoco.xml
