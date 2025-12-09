@@ -19,3 +19,8 @@ spec:
         image: 543816070942.dkr.ecr.us-east-1.amazonaws.com/finastra_group_2_movieworld-service:REPLACE_WITH_TAG
         ports:
         - containerPort: 8080
+        resources:
+          requests:
+            cpu: "250m"
+          limits:
+            cpu: "500m"
